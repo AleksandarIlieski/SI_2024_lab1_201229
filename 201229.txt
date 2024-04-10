@@ -1,0 +1,31 @@
+mkdir SI_2024_lab1_201229
+cd SI_2024_lab1_201229
+git init
+git remote add origin https://github.com/AleksandarIlieski/SI_2024_lab1_201229.git
+git add README.md
+git commit -m "Initial commit"
+git add SILab1_1.java
+git add SILab1_2.java
+git add SILab1Main.java
+git commit -m "Add starter code"
+git pull origin master
+git checkout -b bug1
+git commit -m "Fix wrong condition in filterOddLengthStrings"
+git checkout -b bug2
+git commit -m "Fix wrong condition in makeBigStringFrom"
+git checkout bug1
+git commit -m "Call method filterOddLengthStrings"
+git checkout bug2
+git commit -m "Call method makeBigStringFrom"
+git checkout
+git fetch origin na site granki zaedno so git checkout
+git checkout master
+git merge bug1
+git fetch origin na site granki zaedno so git checkout
+git checkout bug2
+23. git rebase master
+imase conflikti racno gi smeniv kade prifativ samo od edna strana bidejki e istata promena
+24. git checkout master
+25. git merge bug2
+26.git checkout
+git fetch origin na site granki zaedno so git checkout
